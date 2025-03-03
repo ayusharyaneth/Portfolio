@@ -1,0 +1,12 @@
+module.exports = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "matte-black": "#121212",
+        "accent": "#00ffaa"
+      }
+    }
+  },
+  plugins: []
+}
