@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Galxe Task Automator",
+  "version": "1.1",
+  "permissions": ["tabs", "storage", "webRequest", "webNavigation", "proxy"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.galxe.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["*://*.galxe.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
